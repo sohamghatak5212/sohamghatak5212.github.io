@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Soham Ghatak</title>
+    <style>
+      .accordion {
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: left;
+      }
+
+      .accordion-header {
+        width: 100%;
+        background-color: #f1f2f3;
+        border: none;
+        outline: none;
+        padding: 15px 20px;
+        font-size: 20px;
+        font-family: sans-serif;
+        cursor: pointer;
+        text-align: left;
+        border-radius: 5px;
+        margin-bottom: 5px;
+        transition: background-color 0.3s ease;
+      }
+
+      .accordion-header:hover {
+        background-color: #e2e4e7;
+      }
+
+      .accordion-body {
+        max-height: 0;
+        overflow: hidden;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+        padding: 0 20px;
+        margin-bottom: 10px;
+        transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+      }
+
+      .accordion-body.open {
+        padding: 15px 20px;
+        max-height: 500px;
+      }
+
+      .accordion-body h4 {
+        margin-top: 10px;
+        margin-bottom: 5px;
+      }
+
+      .accordion-body ul {
+        margin: 0;
+        padding-left: 20px;
+      }
+    </style>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav>
+      <div class="left">
+        <a href="/">Soham Ghatak</a>
+      </div>
+  
+      <div class="right">
+        <a href="https://www.linkedin.com/in/sohamghatak5212/" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-linkedin"></i>
+          <span>Linkedin</span>
+        </a>
+        
+        <a href="@mailto:soham22@iiserb.ac.in">
+          <i class="fa-solid fa-envelope"></i>
+          <span>Email</span>
+        </a>
+
+        <a href="https://open.spotify.com/user/315mbsfopdgcu3z3yzc4lbiiugei?si=a6f0949bb1d54ed0" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-spotify"></i>
+            <span></span>
+          </a>
+
+          <a href="https://www.instagram.com/thesohamghatak/" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-instagram"></i>
+            <span></span>
+          </a>
+
+      </div>
+    </nav>
+
+    <main>
+      <!-- SECTION 1: Hero -->
+      <section class="hero-section">
+        <div class="text">
+          <h2>Hiya, I'm Soham... </h2>
+          <p> I'm an undergraduate senior (fourth year) at the Indian Institute of Science Education and Research (IISER) Bhopal, majoring in Physics. My interests are too scattered (read: distracted) to be narrowed down yet, but I do wish to pursue high energy physics. Some of my other interests include screenwriting, theatre, piano, and badminton. Feel free to look around. Poke me at: soham22@iiserb.ac.in </p>
+          <div class="links">
+            <a href="#skills">
+              <i class="fa-solid fa-atom"></i>
+              <span>Skills</span>
+            </a>
+            
+            <a href="#timeline">
+              <i class="fa-regular fa-clock"></i>
+              <span>Timeline</span>
+            </a>
+            
+            <a href="#courselectures">
+              <i class="fa-regular fa-note-sticky"></i>
+              <span>Course Lectures</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="headshot">
+          <img src="images/hero-headshot.webp" alt="soham ghatak headshot">
+        </div>
+      </section>
+
+      <!-- SECTION 2: Skills -->
+      <section id="skills" class="skills-section">
+        <h2>Skills</h2>
+        <div class="text">
+          Among programming languages, I've used C, C++, Lua and Python, with Python being the one I'm most comfortable using. I was introduced to Mathematica during a second year physics course. SIMION is another software I learnt during Winter 2023. It is a field and particle trajectory simulator, typically used to model atomic pathways. All said and done, these are among the few programming/simulation tools I can use/operate with relative ease.
+        </div>
+
+        <div class="cells">
+          <div class="cell">
+            <img src="images/python.webp" alt="python logo">
+            <span>Python</span>
+          </div>
+          <div class="cell">
+            <img src="images/C.webp" alt="c logo">
+            <span>C</span>
+          </div>
+          <div class="cell">
+            <img src="images/C++.webp" alt="c++ logo">
+            <span>C++</span>
+          </div>
+          <div class="cell">
+            <img src="images/Mathematica.webp" alt="mathematica logo">
+            <span>Mathematica </span>
+          </div>
+          <div class="cell">
+            <img src="images/matlab.webp" alt="Matlab logo">
+            <span>Matlab</span>
+          </div>
+          <div class="cell">
+            <img src="images/SIMION.webp" alt="SIMION logo">
+            <span>SIMION</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 3: Timeline -->
+      <section id="timeline" class="timeline-section">
+        <h2>Timeline</h2>
+        A laundry list of the courses I've credited at IISER Bhopal, along with brief blurbs about Summer/Winter projects (if any) and about whatever little I indulged in extra-curriculars.
+      
+        <div class="accordion">
+
+          <button class="accordion-header">Winter 2024</button>
+          <div class="accordion-body">
+            <h4>Course work</h4>
+            <ul>
+              <li>PHY302 Mathematical Methods II </li>
+              <li>PHY304 Advanced Quantum Mechanics </li>
+              <li>PHY306 Statistical Mechanics </li>
+              <li>PHY308 Physics Laboratory II </li>
+              <li>PHY314 Introduction to Special Relativity </li>
+              <li>MTH324 Mathematical Methods in Classical Mechanics </li>
+            </ul>
+          </div>
+
+          <button class="accordion-header">Autumn 2024</button>
+          <div class="accordion-body">
+            <h4>Course work</h4>
+            <ul>
+              <li>PHY301 Mathematical Methods I </li>
+              <li>PHY303 Introduction to Quantum Mechanics </li>
+              <li>PHY305 Classical Mechanics </li>
+              <li>PHY307 Physics Laboratory I </li>
+              <li>PHY309 Thermal Physics </li>
+              <li>PHY311 Basic Electronics </li>
+              <li>IPR500 Law Relating to Intellectual Property and Patents </li>
+            </ul>
+            <h4>Experience</h4>
+            <a>Atomic and Molecular Physics Laboratory, IISER Bhopal</a>
+            <ul>
+              <li>Further contributed to the project I started working on in December 2023, by working on ion trajectory models, momentum correlation mapping using Python</li>
+              <li>Simulated the sequential and simultaneous fragmentation of a tri-atomic molecule using Python.</li>
+            </ul>
+            <h4>Extracurriculars</h4>
+            <ul>
+              <li>Wrote and co-directed a stage play adapted from 'Kandittund!' by Adithi Krishnadas and Suresh Eriyat</li>
+              <li>Wrote and co-directed a short-film which was IISERB's official submission for the Inter-IISER Cultural Meet (IICM) held in IISER Kolkata</li>
+              <li>Wrote, co-directed and starred in a stage play which was an adaptation of the Mahabharata, whilst representing the college at IICM 2024</li>
+            </ul>
+          </div>
+
+          <button class="accordion-header">Spring 2024</button>
+          <div class="accordion-body">
+            <h4>Course work</h4>
+            <ul>
+              <li>PHY206 Physics Through Computational Thinking </li>
+              <li>PHY208 General Properties of Matter </li>
+              <li>PHY210 General Physics Laboratory III </li>
+              <li>MTH202 Probability and Statistics </li>
+              <li>MTH204 Complex Variables </li>
+              <li>BIO202 Biology IV: Basic Genetics </li>
+              <li>BIO204 Biology VI: Diversity of Life II </li>
+              <li>BIO206 Biology Laboratory II </li>
+            </ul>
+            <h4>Experience</h4>
+            <a>Physics and Applied Mathematics Unit, ISI Kolkata</a>
+            <ul>
+              <li>Developed a code to calculate N_{eff} in a model involving the SM of the universe</li>
+              <li>The procedure involves solving the coupled Boltzmann equations for photon and neutrino temperatures in the early Universe, incorporating non-instantaneous neutrino decoupling and finite-temperature QED corrections. The energy density evolution is governed by the Liouville equation, which is numerically integrated using Python's ODE solvers from T=10 MeV to T=10^{-2} MeV</li>
+              <li>N_{eff} is computed by tracking the ratio of neutrino to photon energy densities and comparing it with the standard prediction</li>
+            </ul>
+          </div>
+
+          <button class="accordion-header">Autumn 2023</button>
+          <div class="accordion-body">
+            <h4>Course work</h4>
+            <ul>
+              <li>PHY201 Waves and Optics </li>
+              <li>PHY209 Electromagnetism </li>
+              <li>PHY205 General Physics Laboratory II </li>
+              <li>MTH201 Multivariable Calculus </li>
+              <li>MTH203 Introduction to Groups and Symmetry </li>
+              <li>BIO201 Biology III: Fundamentals of Molecular Biology </li>
+              <li>BIO203 Biology V: Diversity of Life I </li>
+              <li>BIO205 Biology Laboratory I </li>
+            </ul>
+            <h4>Experience</h4>
+            <a>Atomic and Molecular Physics Laboratory, IISER Bhopal</a>
+            <ul>
+              <li>Ran simulations and tracked trajectories of particles in a COLTRIMS setup, to be tested and built for usage in the lab, using a variety of computational methods, primarily involving SIMION</li>
+              <li>Derived the kinematics and arrived at it via experiments. Automated the entire process using SIMION, Lua, and Python.</li>
+            </ul>
+            <h4>Extracurriculars</h4>
+            <p> Joined the IISERB Photography Club</p>
+          </div>
+
+          <button class="accordion-header">Spring 2023</button>
+          <div class="accordion-body">
+            <h4>Course work</h4>
+            <ul>
+              <li>PHY106 Quantum Physics </li>
+              <li>MTH102 Linear Algebra </li>
+              <li>BIO102 Biology II: Fundamentals of Cell Biology </li>
+              <li>CHM112 Basic Organic Chemistry I  </li>
+              <li>EES102 Introduction to Environmental Sciences  </li>
+              <li>ECS102 Introduction to Programming </li>
+              <li>CHM114 Chemistry Laboratory I </li>
+            </ul>
+            <h4>Extracurriculars</h4>
+            <p> Joined the IISERB Drama and Theatre Club as a scriptwriter</p>
+          </div>
+
+          <button class="accordion-header">Winter 2022</button>
+          <div class="accordion-body">
+            <h4>Course work</h4>
+            <ul>
+              <li>PHY101 Mechanics</li>
+              <li>MTH101 Calculus of One Variable</li>
+              <li>BIO101 Biology I: Biomolecules </li>
+              <li>CHM101 General Chemistry </li>
+              <li>EES101 Earth Materials and Processes  </li>
+              <li>HSS101 English for Communication  </li>
+              <li>PHY103 General Physics Laboratory I   </li>
+              <li>BIO103 General Biology Laboratory  </li>
+              <li>PT101 Physical Training  </li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- SECTION 4: Course Lectures -->
+      <section id="courselectures" class="courselectures-section">
+        <h2>Course Lectures</h2>
+          A fever dream that started in my third year. I tried making LaTeX notes of lectures. I've uploaded whatever I could finish into a list here. Keep in mind that these are not endorsed by the lecturer and that any error that you encounter are probably mine own. These could be used as a list of the things that were taught in classes, along with references and brief descriptions.
+          <div class="accordion">
+
+            <button class="accordion-header">Autumn 2024</button>
+            <div class="accordion-body">
+               <p><a href="https://drive.google.com/file/d/12GnkFCce-kJ_amo1WVLjkPnvUZbgDhVr/view?usp=sharing" target="_blank">PHY309: Thermal Physics (Snigdha Thakur)</a></p>
+            </div>
+
+            <button class="accordion-header">Spring 2025</button>
+            <div class="accordion-body">
+               <p><a href="https://drive.google.com/file/d/1yd54eeY3TPkxVzR2cXU0_38MzuuAk_Ao/view?usp=sharing" target="_blank">PHY306: Statistical Mechanics (Auditya Sharma)</a></p>
+            </div>
+
+          </div>
+        
+      </section>
+
+
+
+
+    </main>
+    <script>
+      const headers = document.querySelectorAll(".accordion-header");
+      headers.forEach(header => {
+        header.addEventListener("click", () => {
+          const body = header.nextElementSibling;
+          body.classList.toggle("open");
+        });
+      });
+    </script>
+  </body>
+</html>
