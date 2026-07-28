@@ -20,7 +20,7 @@ body {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-size: 20px; /* Adjust this number up or down until it looks right */
+  font-size: 15px; /* Adjust this number up or down until it looks right */
   line-height: 1.5;
 }
 
@@ -92,7 +92,6 @@ nav .right a span {
 .hero-section .text .links a {
   display: inline-block;
   padding: 5px 10px;
-  color: #364028;
   border: 2px solid var(--link-color);
   border-radius: 5px;
   margin-right: 10px;
