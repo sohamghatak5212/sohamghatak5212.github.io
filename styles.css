@@ -16,11 +16,11 @@ html {
 }
 
 body {
-  font-family:  sans-serif;
-  color: var(--text-color);
-  background-color: var(--background-color);
-  max-width: 1400px;
-  margin: 0 auto;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Cedarville Cursive", cursive;
