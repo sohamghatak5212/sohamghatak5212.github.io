@@ -3,6 +3,24 @@ styles.css
   --text-color: #1a1c20;
   --link-color: #4a76ee;
   --background-color: #eeeff1cb;
+  --accordion-header-bg: #f1f2f3;
+  --accordion-body-bg: #f9f9f9;
+}
+
+/* When the dark-mode class is active, it overrides the root variables */
+body.dark-mode {
+  --text-color: #eeeff1cb; /* Light text */
+  --link-color: #7ba2ff;   /* Lighter blue for better contrast */
+  --background-color: #121212; /* Dark background */
+  --accordion-header-bg: #1e1e1e; /* Darker accordion header */
+  --accordion-body-bg: #2a2a2a; /* Darker accordion body */
+}
+
+/* Ensure background color transition is smooth */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 * {
