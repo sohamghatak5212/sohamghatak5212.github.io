@@ -1,10 +1,10 @@
 styles.css
 :root {
-  --text-color: #1a1c20;
-  --link-color: #4a76ee;
-  --background-color: #eeeff1cb;
-  --accordion-header-bg: #f1f2f3;
-  --accordion-body-bg: #f9f9f9;
+  --text-color: #4a4a4a; /* A soft charcoal instead of harsh black */
+  --link-color: #ff8fab; /* A soft, playful pink (or swap for a matcha green: #a3b18a) */
+  --background-color: #fff0f3; /* A very subtle warm tint */
+  --accordion-header-bg: #ffe5ec;
+  --accordion-body-bg: #ffffff;
 }
 
 /* When the dark-mode class is active, it overrides the root variables */
@@ -186,7 +186,13 @@ body.dark-mode .hero-section .text .links a:hover {
   padding: 10px 20px;
   margin: 10px;
   border: 1.5px solid #d3d3d3;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   border-radius: 5px;
+}
+
+.skills-section .cells .cell:hover {
+  transform: translateY(-5px); /* Makes the box float up */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Adds a soft shadow beneath it */
 }
 
 .skills-section .cells .cell img {
