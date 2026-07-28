@@ -110,11 +110,17 @@ nav .right a span {
 .hero-section .text .links a {
   display: inline-block;
   padding: 5px 10px;
-  border: 2px solid var(--link-color);
+  border: 2px solid transparent; /* Makes the border invisible in light mode */
+  color: var(--text-color); /* Sets the text and icon to your standard dark color */
   border-radius: 5px;
   margin-right: 10px;
   margin-bottom: 10px;
   transition: .1s;
+}
+
+body.dark-mode .hero-section .text .links a {
+  border: 2px solid var(--link-color); /* Brings back the blue outline */
+  color: var(--link-color); /* Turns the text and icon blue */
 }
 
 .hero-section .text .links a:hover {
