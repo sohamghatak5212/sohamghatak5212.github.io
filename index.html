@@ -339,12 +339,31 @@
 
     </main>
     <script>
+      // Existing accordion script
       const headers = document.querySelectorAll(".accordion-header");
       headers.forEach(header => {
         header.addEventListener("click", () => {
           const body = header.nextElementSibling;
           body.classList.toggle("open");
         });
+      });
+
+      // NEW Dark Mode script
+      const themeToggle = document.getElementById("theme-toggle");
+      const themeIcon = themeToggle.querySelector("i");
+
+      themeToggle.addEventListener("click", (e) => {
+        e.preventDefault(); // Prevents the page from jumping to the top
+        document.body.classList.toggle("dark-mode");
+        
+        // Swap the icon between moon and sun
+        if (document.body.classList.contains("dark-mode")) {
+          themeIcon.classList.remove("fa-moon");
+          themeIcon.classList.add("fa-sun");
+        } else {
+          themeIcon.classList.remove("fa-sun");
+          themeIcon.classList.add("fa-moon");
+        }
       });
     </script>
   </body>
