@@ -43,7 +43,8 @@
 
      .accordion-header {
         width: 100%;
-        background-color: #f1f2f3;
+        background-color: var(--accordion-header-bg); 
+        color: var(--text-color);
         border: none;
         outline: none;
         padding: 15px 20px;
@@ -64,7 +65,8 @@
       .accordion-body {
         max-height: 0;
         overflow: hidden;
-        background-color: #f9f9f9;
+        background-color: var(--accordion-body-bg); /* Change this line */
+        color: var(--text-color);
         border-radius: 5px;
         padding: 0 20px;
         margin-bottom: 10px;
@@ -93,8 +95,15 @@
       <div class="left">
         <a href="/">Soham Ghatak</a>
       </div>
-  
-      <div class="right">
+
+          <div class="right">
+        
+        <!-- Add this new toggle button -->
+        <a href="#" id="theme-toggle" aria-label="Toggle Dark Mode">
+          <i class="fa-solid fa-moon"></i>
+        </a>
+
+        <a href="https://open.spotify.com/user/..." target="_blank" rel="noopener noreferrer">
         
         <a href="https://open.spotify.com/user/315mbsfopdgcu3z3yzc4lbiiugei?si=a6f0949bb1d54ed0" target="_blank" rel="noopener noreferrer">
             <i class="fa-brands fa-spotify"></i>
