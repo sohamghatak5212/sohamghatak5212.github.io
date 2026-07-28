@@ -1,19 +1,20 @@
 styles.css
 :root {
-  --text-color: #4a4a4a; /* A soft charcoal instead of harsh black */
-  --link-color: #ff8fab; /* A soft, playful pink (or swap for a matcha green: #a3b18a) */
-  --background-color: #fff0f3; /* A very subtle warm tint */
-  --accordion-header-bg: #ffe5ec;
-  --accordion-body-bg: #ffffff;
+  --text-color: #1a1c20;
+  --link-color: #4a76ee;
+  --background-color: #eeeff1cb;
+  --accordion-header-bg: #f1f2f3;
+  --accordion-body-bg: #f9f9f9;
+  --box-border: #a0a0a0; /* A darker, more visible gray for light mode */
 }
 
-/* When the dark-mode class is active, it overrides the root variables */
 body.dark-mode {
-  --text-color: #eeeff1cb; /* Light text */
-  --link-color: #7ba2ff;   /* Lighter blue for better contrast */
-  --background-color: #121212; /* Dark background */
-  --accordion-header-bg: #1e1e1e; /* Darker accordion header */
-  --accordion-body-bg: #2a2a2a; /* Darker accordion body */
+  --text-color: #eeeff1cb; 
+  --link-color: #7ba2ff;   
+  --background-color: #121212; 
+  --accordion-header-bg: #1e1e1e; 
+  --accordion-body-bg: #2a2a2a; 
+  --box-border: #444444; /* A subtle dark gray for dark mode */
 }
 
 /* Ensure background color transition is smooth */
@@ -185,8 +186,7 @@ body.dark-mode .hero-section .text .links a:hover {
   width: 200px;
   padding: 10px 20px;
   margin: 10px;
-  border: 1.5px solid #d3d3d3;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1.5px solid var(--box-border); /* Now uses the smart variable */
   border-radius: 5px;
 }
 
