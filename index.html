@@ -354,15 +354,25 @@
         });
       });
 
-      // NEW Dark Mode script
+      // UPDATED Dark Mode script (Auto-detects device theme)
       const themeToggle = document.getElementById("theme-toggle");
       const themeIcon = themeToggle.querySelector("i");
 
+      // 1. Check the device's color scheme preference
+      const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+
+      // 2. Automatically apply dark mode if the device prefers it
+      if (prefersDarkScheme.matches) {
+        document.body.classList.add("dark-mode");
+        themeIcon.classList.remove("fa-moon");
+        themeIcon.classList.add("fa-sun");
+      }
+
+      // 3. Keep the manual toggle working
       themeToggle.addEventListener("click", (e) => {
-        e.preventDefault(); // Prevents the page from jumping to the top
+        e.preventDefault(); 
         document.body.classList.toggle("dark-mode");
         
-        // Swap the icon between moon and sun
         if (document.body.classList.contains("dark-mode")) {
           themeIcon.classList.remove("fa-moon");
           themeIcon.classList.add("fa-sun");
