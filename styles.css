@@ -21,10 +21,9 @@ body {
   background-color: var(--background-color);
   max-width: 1400px;
   margin: 0 auto;
-}
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Tagesschrift', sans-serif;
+  font-family: 'Playfair Display', serif;
 }
 
 a {
