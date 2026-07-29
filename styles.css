@@ -382,3 +382,23 @@ body.dark-mode .hero-section .text .links a:hover {
     padding: 0 20px;
   }
 }
+
+/* Container for the icons */
+nav .right {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;      
+  align-items: center;    
+  gap: 15px;              
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 600px) {
+  nav .right {
+    gap: 8px; 
+  }
+  
+  nav .right a i {
+    font-size: 18px; 
+  }
+}
